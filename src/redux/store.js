@@ -1,0 +1,7 @@
+import {allReducers} from "./reducers";
+import {createStore} from "redux";
+
+export const store = createStore(allReducers , window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+console.log(store);
+console.log(store.getState()); // tㅏ상태 확인
+
